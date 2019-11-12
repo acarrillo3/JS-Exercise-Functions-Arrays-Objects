@@ -284,14 +284,14 @@ function getOlderCars(inventory, maxYear) {
 */
 function getGermanCars(inventory) {
    // /* code here */
-//   let germanCar = ["Audi", "Mercedes-Benz", "Volkswagon", "BMW"];
-//   for (let i = 0; i < inventory.length; i++) {
-//    if (inventory[i].car_make === inventory.includes(germanCar)) {
-//      germanCar.push(inventory[i]);
-//   }
-//   return germanCar;
-//  }
-//  return inventory;
+   let newArray = [];
+   let germanCar = ["Audi", "Mercedes-Benz", "Volkswagon", "BMW"];
+   for (let i = 0; i < inventory.length; i++) {
+    if (inventory[i].car_make === inventory.includes(germanCar)) {
+      newArray.push(inventory[i]);
+    }
+  }
+  return newArray;
 }
 
 /**
