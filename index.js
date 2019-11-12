@@ -39,17 +39,10 @@ function addNumbers(num1, num2) {
  *   email: "leia@leia.com",
  * }
 */
-function makePersonObject(id, name, email) {
-  const person = {
-    id: 4,
-    name: "Zoe",
-    email: "zoe01cleaningsvc@gmail.com",
-    getFullperson : function(){
-      return this.id + this.name + this.email;
-    }
-  }
+function makePersonObject(/* code here */) {
+  /* code here */
 }
-makePersonObject(person());
+
 /**
  * ### Challenge `getName`
  * 
@@ -90,7 +83,6 @@ function makeSmartPerson(/* code here */) {
 
 /*
 // ⭐️ Example Test Data ⭐️
-
 var inventory = [
   { id: 1, car_make: "Lincoln", car_model: "Navigator", car_year: 2009 },
   { id: 2, car_make: "Mazda", car_model: "Miata MX-5", car_year: 2001 },
