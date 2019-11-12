@@ -283,14 +283,15 @@ function getOlderCars(inventory, maxYear) {
  * in the same order as they appear in the original inventory.
 */
 function getGermanCars(inventory) {
-  /* code here */
-  let germanCar = ["Audi", "Mercedes-Benz", "Volkswagon", "BMW"];
-  for (let i = 0; i < inventory.length; i++) {
-    if (inventory[i].car_make === inventory.includes(germanCar)) {
-      germanCar.push(inventory[i]);
-    }
-  }
-  return germanCar;
+   // /* code here */
+//   let germanCar = ["Audi", "Mercedes-Benz", "Volkswagon", "BMW"];
+//   for (let i = 0; i < inventory.length; i++) {
+//    if (inventory[i].car_make === inventory.includes(germanCar)) {
+//      germanCar.push(inventory[i]);
+//   }
+//   return germanCar;
+//  }
+//  return inventory;
 }
 
 /**
@@ -312,6 +313,9 @@ function getGermanCars(inventory) {
  * }
 */
 const sum = null; // code here!
+const add = (a, b) => {
+  return a + b;
+};
 const addFive = null; // code here!
 const argTimesTwo = null; // code here!
 
