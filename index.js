@@ -82,15 +82,23 @@ function getName(person) {
 */
 function makeSmartPerson(nameInput) {
   /* code here */
-  const smartPerson = {
-    name: nameInput,
-    sum: function add(num1, num2) {
-      return num1 + num2
-    },
-    speak: function() {
-      return `Hello, my name is ${smartPerson.name}`
-    }
+  // a different way to write this function
+  // const smartPerson = {
+  //   name: nameInput,
+  //   sum: (num1, num2) => num1 + num2,
+  //   speak: () => 'Hello, my name is' + this.name
+  // }
+  // return smartPerson;
+ const smartPerson = {
+  name: nameInput,
+  sum: function add(num1, num2) {
+  return num1 + num2
+  },
+  speak: function() {
+  return `Hello, my name is ${this.name}`
   }
+  }
+  return smartPerson
 }
 
 
@@ -169,9 +177,12 @@ function getCarInfoByIndex(inventory, index) {
  * For example, if getLastCarInfo is invoked passing the inventory inside /data/inventory.js,
  * it will return `This is a Lincoln Town Car`.
 */
-function getLastCarInfo(/* code here */) {
+function getLastCarInfo(inventory) {
   /* code here */
+  const lastCar = inventory[inventory.length-1];
+  return `The car is a ${lastCar.car_make} ${lastCar.car_model}`;
 }
+
 
 /**
  * ### Challenge `getCarInfoById`
